@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  width: 100vw;
   background-color: black !important;
   overflow-x: hidden;
 
@@ -77,12 +77,13 @@ body {
   height: 260px;
 }
 .bannarimgs .waves {
-  width: 500px;
+  max-width: 500px;
 
 }
 .bannarimgs img {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
+  
 }
 
 
@@ -123,9 +124,49 @@ body {
   top: 0%;
   left: 45%;
 }
+
+@media screen and (min-width: 1px) and  (max-width: 991px) {
+  .MainSecRow {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .bannarimgs {
+    margin-bottom: 50px;
+  }
+  
+}
+@media screen and (min-width: 1px) and  (max-width: 556px) {
+  .bannarimgs .waves {
+    max-width: 350px;
+  
+  }
+  .bannarimgs img {
+    position: absolute;
+    max-width: 350px;
+    
+  }
+  .gimg  {
+    position: absolute;
+    left: 0%;
+    top: 60%;
+  
+  }
+  .uimg  {
+    position: absolute;
+    left: 60%;
+    top: 80%;
+  }
+  
+}
+
+
+
 .MainSecContainer {
   height: fit-content;
-  margin: 0px 0 300px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .homesec2 {
@@ -305,10 +346,23 @@ body {
 }
 
 /* Contact section  */
+
+.bounceInRightRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .bounceInRightRow div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .homesec6 {
   background-color: #070707;
   padding: 100px;
-
 }
 
 .homesec6 h3 {
@@ -335,10 +389,10 @@ body {
 .homesec6 form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
   margin: auto;
-  text-align: left;
+  text-align: center;
   direction: ltr;
 
 }
@@ -355,6 +409,10 @@ body {
   color: white;
   background-color: #070707;
   margin-right: 10px;
+}
+.homesec6 form textarea {
+  height: 100px;
+  
 }
 
 .homesec6 form input::placeholder,
@@ -381,6 +439,7 @@ body {
   text-align: center;
   border-radius: 10px;
   transition: all 1s ease-in-out;
+  align-self: center;
 }
 
 .homesec6 button:hover {

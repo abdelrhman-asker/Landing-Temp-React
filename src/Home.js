@@ -51,8 +51,8 @@ const Home = () => {
     
     <section className='MainSecContainer' >
     <Container>
-      <Row>
-      <Col md={7} sm={12} className="bannartext wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
+      <Row className='MainSecRow'>
+      <Col lg={7} sm={12} className="bannartext wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
               <p>WEB DESIGN <span>//</span> WEBFLOW DEVELOPMENT <span>//</span> SEO</p>
               <h2>Turn your website into a customer-acquisition engine.</h2>
               <h5>We build marketing websites that help you sell on autopilot.</h5>
@@ -60,7 +60,7 @@ const Home = () => {
             </Col>
 
 
-            <Col md={5} sm={12} className="bannarimgs wow slideInRight" data-wow-duration="2s" data-wow-delay="0.1s">
+            <Col lg={5} sm={12}  className="bannarimgs wow slideInRight" data-wow-duration="2s" data-wow-delay="0.1s">
               <img src="images/623503637e979197919c6c03_Topology-1 (1).svg" alt="" className="waves" />
               <img src="images/623a183aa76fb537cbc5dc0e_Group 8-p-500.png" alt="" className="laptop" />
               <div className="imgbox gimg">
@@ -137,9 +137,9 @@ const Home = () => {
       </section>
       {/* Contact  section */}
       <section className="homesec6" id="contact">
-        <Container>
+        <Container className="bounceInRightCont">
           <h3 className="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">Contact Us</h3>
-          <Row className="align-items-center">
+          <Row className="bounceInRightRow">
             <Col md={6} sm={12} className="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
               <div className="homesec6Info">
                 <p  ><span>Email:</span> Abdoaskerr@gmail.com</p>
@@ -152,7 +152,7 @@ const Home = () => {
               </div>
             </Col>
             <Col md={6} sm={12} className="wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-              <div>
+              <div className="bounceInRightDiv">
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="d-flex">
                     <input type="text" name="name" placeholder="Name" />
