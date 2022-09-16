@@ -20,7 +20,9 @@ import "./App.css";
 // import required modules
 import { Pagination } from "swiper";
 import axios from "axios";
-
+    
+ 
+  
 
 
 
@@ -45,10 +47,14 @@ const Home = () => {
       });
     e.target.reset()
   };
+
+
+
   return (
     <>
         <MainNav />
     
+
     <section className='MainSecContainer' >
     <Container>
       <Row className='MainSecRow'>
@@ -135,7 +141,10 @@ const Home = () => {
         
       </Swiper>
       </section>
+
+
       {/* Contact  section */}
+      
       <section className="homesec6" id="contact">
         <Container className="bounceInRightCont">
           <h3 className="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">Contact Us</h3>
