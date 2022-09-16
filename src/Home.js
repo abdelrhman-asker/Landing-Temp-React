@@ -143,11 +143,11 @@ const Home = () => {
             <Col md={6} sm={12} className="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
               <div className="homesec6Info">
                 <p  ><span>Email:</span> Abdoaskerr@gmail.com</p>
-                <p><span>Facebook:<Link to="https://web.facebook.com/3skoor1/" target="_blank"><FacebookIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
+                <p><span>Facebook:<a href="https://web.facebook.com/3skoor1/" target="_blank"><FacebookIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
                    </span> </p>
-                <p><span>Twitter:<Link to="https://twitter.com/AbdoAsker" target="_blank"><TwitterIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
+                <p><span>Twitter:<a href="https://twitter.com/AbdoAsker" target="_blank"><TwitterIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
                    </span></p>
-                <p><span>LinkedIn:<Link to="https://www.linkedin.com/in/abdelrhman-asker-967206173/" target="_blank"><LinkedInIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
+                <p><span>LinkedIn:<a href="https://www.linkedin.com/in/abdelrhman-asker-967206173/" target="_blank"><LinkedInIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
                    </span></p>
               </div>
             </Col>
