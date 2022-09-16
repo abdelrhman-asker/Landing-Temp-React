@@ -29,9 +29,9 @@ const Footer = () => {
             </div></Col>
             <Col md="3" sm="12" className='IconsDivFooter'>
             <div >
-            <Link className='IconsDivFooterLink' to="https://web.facebook.com/3skoor1/" target="_blank"><FacebookIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
-            <Link  className='IconsDivFooterLink' to="https://twitter.com/AbdoAsker" target="_blank"><TwitterIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
-            <Link  className='IconsDivFooterLink' to="https://www.linkedin.com/in/abdelrhman-asker-967206173/" target="_blank"><LinkedInIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></Link>
+            <a className='IconsDivFooterLink' href="https://web.facebook.com/3skoor1/" target="_blank"><FacebookIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
+            <a  className='IconsDivFooterLink' href="https://twitter.com/AbdoAsker" target="_blank"><TwitterIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
+            <a  className='IconsDivFooterLink' href="https://www.linkedin.com/in/abdelrhman-asker-967206173/" target="_blank"><LinkedInIcon className="homesec6InfoIco" sx={{ fontSize: 40 }} /></a>
                    </div></Col>
         </Row>
     </Container>
