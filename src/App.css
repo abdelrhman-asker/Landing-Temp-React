@@ -288,11 +288,16 @@ body {
 /*****projects*************/
 .allprojectsec {
   background-color: #070707;
-  padding: 100px;
   min-height: 100vh;
   position: relative;
+  width: 100vw;
+  overflow: hidden;
 }
-
+.allprojectsec .allprojectCont {
+justify-content: center;
+align-items: center;
+width: 100%;
+}
 .allprojectsec h3 {
   text-align: center;
   color: #f87765;

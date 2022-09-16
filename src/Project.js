@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import axios from "axios";
 import "./App.css"
-
+import Footer from "./Footer";
+import MainNav from "./MainNav"
 function Project() {
     const [projects, setProject] = useState([]);
     useEffect(() => {
@@ -13,13 +14,15 @@ function Project() {
     }, [])
     return (
         <>
+
+        <MainNav />
             <section className="allprojectsec">
                 <h3 className="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">All Projects</h3>
                 <img src="images/623503637e979197919c6c03_Topology-1 (1).svg" alt="" className="waves" />
-                <Container>
-                    <Row>
+                <div >
+                    <Row className="allprojectCont">
                         {projects.map((project) => (
-                            <Col md={4} sm={12} key={project.id}>
+                            <Col md={4} sm={11} key={project.id}>
                                 <div className=" wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                                     <img src={project.photo} alt="" />
                                     <h5>{project.title}</h5>
@@ -29,8 +32,9 @@ function Project() {
                             </Col>
                         ))}
                     </Row>
-                </Container>
+                </div>
             </section>
+            <Footer />
         </>
     )
 }
