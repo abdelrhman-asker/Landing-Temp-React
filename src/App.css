@@ -15,6 +15,7 @@ body {
   color: white !important;
   padding: auto;
   margin: auto 5px;
+  font-size: 22px;
   
 
 }
@@ -45,6 +46,22 @@ body {
 
 .MainNavbarsec {
   background-color: black ;
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  margin-bottom: 50px;
+  
+}
+.MainNavbarsec .ms-auto {
+  margin-right: 50px;
+  display: flex;
+  gap: 25px;
+  
+  
+}
+.MainNavbarsec .navbar-collapse {
+  width: fit-content;
+  
 }
 
 .bannartext {
@@ -74,7 +91,7 @@ body {
 }
 .bannarimgs {
   position: relative;
-  height: 260px;
+  height: 90vh;
 }
 .bannarimgs .waves {
   max-width: 500px;
@@ -98,7 +115,7 @@ body {
 .gimg  {
   position: absolute;
   left: 0%;
-  top: 80%;
+  top: 35%;
 
 }
 .uimg img {
@@ -110,8 +127,8 @@ body {
 }
 .uimg  {
   position: absolute;
-  left: 60%;
-  top: 100%;
+  left: 70%;
+  top: 40%;
 }
 .wimg img {
   background-color: rgba(165, 42, 42, 0.252);
@@ -133,7 +150,11 @@ body {
     margin: 0;
   }
   .bannarimgs {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+  }
+  .bannartext {
+    padding-top: 0px;
+    margin-top: -150px !important;
   }
   
 }
@@ -150,13 +171,13 @@ body {
   .gimg  {
     position: absolute;
     left: 0%;
-    top: 60%;
+    top: 25%;
   
   }
   .uimg  {
     position: absolute;
     left: 60%;
-    top: 80%;
+    top: 30%;
   }
   
 }
@@ -164,9 +185,10 @@ body {
 
 
 .MainSecContainer {
-  height: fit-content;
+
   width: 100vw;
   overflow-x: hidden;
+  height: calc(fit-content + 100px);
 }
 
 .homesec2 {
