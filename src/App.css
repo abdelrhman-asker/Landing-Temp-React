@@ -47,9 +47,10 @@ body {
 .MainNavbarsec {
   background-color: black ;
   position: fixed;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   margin-bottom: 50px;
+  z-index: 5;
   
 }
 .MainNavbarsec .ms-auto {
